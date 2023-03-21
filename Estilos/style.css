@@ -1,0 +1,187 @@
+body {
+    font-family: 'Ubuntu';
+    font-weight: 300;    
+}
+
+header {
+    background-color: rgb(17 144 203);
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+header ul li a{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+}
+
+header ul li a:hover{
+    color: #bababa;
+    outline-color: #999;
+    outline-style: solid;
+    
+}
+
+header ul li a:active{
+    color: black;
+    
+}
+
+main {
+    padding: 0px 0px 200px 0px;
+}
+.botoncompraventa {
+    display: flex;
+    margin: 200px 0px 200px 0px;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.botoncompraventa a{
+    font-weight: 900;
+    background-color: rgb(17 144 203);
+    text-decoration: none;  
+    padding: 40px 100px;
+    border-radius: 7px;
+    color: white;
+}
+
+.botoncompraventa a:hover{
+    color: #bababa;
+    outline-color: #999;
+    outline-style: solid;
+}
+
+.botoncompraventa a:active{
+    color: white;
+    
+}
+
+.comofuncionavidyparrafo {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    gap: 20px;
+    justify-content: center;
+    gap: 5px;
+}
+
+.videocomofunciona {
+    padding: 5px;
+}
+.parrafocomofunciona{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding: 5px;   
+}
+.parrafocomofunciona h2{
+margin: unset;
+}
+.parrafocomofunciona p{
+    margin: unset;
+    text-align: justify; 
+}
+#iniciodesesion {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#recuperarcontraseña {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#botongo {
+    background-color: rgb(17 144 203);
+    border-radius: 20px;
+}
+
+#creatucuenta {
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer {
+    border-top: 2px solid rgb(17 144 203);
+}
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer ul li {
+    list-style: none;
+    padding: 0px 15px;
+}
+footer p {
+    color: #999
+}
+input:focus {
+    background-color:rgb(232 240 254); 
+}
+#creatucuenta div{
+    padding: 10px 0px;
+}
+#botongo{
+    font-weight: 900;
+    background-color: rgb(17 144 203);
+    text-decoration: none;  
+    padding: 10px 30px;
+    border-radius: 7px;
+    color: white;
+}
+#botongo:hover{
+    color: #bababa;
+    
+}
+
+#botongo:active{
+    color: black;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+    .comofuncionavidyparrafo {
+        display: inline-flex;
+        flex-direction: column-reverse;
+    }
+    .videocomofunciona iframe {
+        width: -webkit-fill-available;
+    }
+}
+@media only screen and (max-width: 576px){
+
+    header {
+        flex-direction: row;
+    }
+    header ul {
+        width: 70%;
+        font-size: 80%;
+        padding: 0px 3px 0px 0px;
+        justify-content: end;
+    }
+    header ul li{
+        padding: 0px;
+    }
+    .comofuncionavidyparrafo {
+        display: inline-flex;
+        flex-direction: column-reverse;
+    }
+    .videocomofunciona iframe {
+        width: -webkit-fill-available;
+    }
+}

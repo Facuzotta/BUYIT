@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Estilos/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="../Multimedia/LogoSampleBUYIT.jpg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <title>Crea tu cuenta</title>
+    </head>
+    <body>
+        <header>          
+            <a href="./Index.html">
+                <img src="../Multimedia/LogoSampleBUYIT.jpg" alt="logo" width="100" height="100">
+            </a>   
+            
+            <ul class="menu-nav">
+                <li><a href="./iniciodesesion.html" target="_blank">Iniciar Sesión</a></li>
+                <li><a href="./Index.html">¿Como funciona?</a></li>
+                <li><a href="./creatucuenta.html" target="_parent">Crear una nueva cuenta</a></li>  
+
+            </ul>
+            
+            
+        </header>
+        <main id="creatucuenta">
+            <h1>Crea tu cuenta</h1>
+            <form action="" method="get">
+                <div>
+                    <label for="Usuario/Mail">Usuario/Mail</label>
+                    <input type="email" id="Usuario/Mail" placeholder="ej. admin@buyit.com" required>
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+
+                <div>
+                    <label for="reingresarpassword">Reingresar Password</label>
+                    <input type="password" id="reingresarpassword" required>
+                </div>
+                
+                <div>
+                    <label for="Nombredelaempresa">Nombre de la empresa</label>
+                    <input type="text"  id="Nombredelaempresa" required>
+                </div>
+                
+                <div>
+                    <label for="idfiscal">Numero de ID fiscal</label>
+                    <input type="number"  id="idfiscal" placeholder="0123456789" required>
+                </div>
+
+                <div>
+                    <label for="adjuntaconstancia">Adjuntar constancia de ID fiscal</label>
+                    <input type="file" id="adjuntaconstancia" required>
+                </div>
+
+                <div>
+                <label for="actprinc">Actividad principal de la empresa</label>
+                    <select name="Actividad" id="actprinc">
+                        <option value="1" selected disabled>--Seleccioná una opción--</Seleccion></option>
+                        <optgroup label="Actividades económicas primarias">
+                            <option value="1">Agricultura</option>
+                            <option value="2">Ganadería</option>
+                            <option value="3">Pesca</option>
+                            <option value="4">Selvicultura</option>
+                            <option value="5">Minería</option>
+                        <optgroup label="Actividades económicas secundarias">
+                            <option value="6">Industria plástica</option>
+                            <option value="7">Industria textil</option>
+                            <option value="8">Industria química</option>
+                            <option value="9">Industria tabacalera</option>
+                            <option value="10">Industria petrolera</option>
+                            <option value="11">Industria siderúrgica</option>
+                            <option value="12">Industria automotriz</option>
+                            <option value="13">Industria alimenticia</option>
+                            <option value="14">Industria cementera</option>
+                            <option value="15">Industria aeronáutica</option>
+                            <option value="16">Industria astronáutica</option>
+                            <option value="17">Industria robótica</option>
+                            <option value="18">Industria farmacéutica</option>
+                            <option value="19">Industria ferroviaria</option>
+                            <option value="20">Industria editorial</option>
+                            <option value="21">Industria cosmética</option>
+                            <option value="22">Industria naviera</option>
+                            <option value="23">Industria papelera</option>
+                            <option value="24">Industria armamentista</option>
+                            <option value="25">Industria de electrodomésticos</option>
+                            <option value="26">Industria energética</option>
+                        <optgroup label="Actividades económicas terciarias">
+                            <option value="27">Transporte</option>
+                            <option value="28">Medios de comunicación</option>
+                            <option value="29">Banca</option>
+                            <option value="30">Casinos</option>
+                            <option value="31">Telecomunicaciones</option>
+                            <option value="32">Servicios de salud</option>
+                            <option value="33">Hotelería</option>
+                            <option value="34">Inmobiliaria</option>
+                            <option value="35">Servicios financieros</option>
+                            <option value="36">Redes sociales</option>
+                            <option value="37">Peluqueria</option>
+                            <option value="38">Reparacion de electrodomésticos</option>
+                            <option value="39">Servicios de seguridad</option>
+                            <option value="40">Servicios fúnebres</option>
+                            <option value="41">Servicios Legales</option>
+                            <option value="42">Servicios de entretenimiento</option>
+                            <option value="43">Turismo</option>
+                            <option value="44">Ventas al por menor</option>
+                            <option value="45">Restaurantes y gastronomía</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="tipodecuenta">Elegí el tipo de usuario que deseas dar de alta</label>
+                    <select name="tipodecuenta" id="tipodecuenta">
+                            <option value="46">Compras</option>
+                            <option value="47">Ventas</option>                       
+                    </select>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar" id="botongo">
+                </div>
+                <div>
+                    <input type="checkbox" id="tyc">Acepto el acuerdo de <a href="https://codehouse.academy/politica-de-privacidad-y-proteccion-de-datos/" target="_blank">privacidad y proteccion de datos</a> 
+                </div>
+
+            </form>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="./Index.html">Ayuda</a></li>
+                <li><a href="https://www.zonajobs.com.ar/">Trabaja con nosotros</a></li>
+                <li><a href="https://autogestion.produccion.gob.ar/consumidores">Defensa del consumidor</a></li>
+            </ul>
+            <p>Copyright © 2023-2023 BuyIT SA
+                Balcarce 50, CP 1064, CABA
+            </p>
+        
+        </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
